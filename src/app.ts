@@ -23,6 +23,10 @@ app.use(cors());
 // throws.
 app.use(express.json());
 
+app.get("/", (_req: Request, res: Response) => {
+  res.send("Mikaela's Backend is running");
+});
+
 app.get("/api/health", (_req: Request, res: Response) => {
   res.json({ ok: true, db: mongoose.connection.readyState === 1 });
 });
