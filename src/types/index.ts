@@ -1,59 +1,93 @@
 import type { Types } from "mongoose";
 
-// FROM SESSION 1: the three interfaces, copied from itelect4-project's
-// src/types/index.ts. They are the reason this backend has the shape it
-// has: the schemas in src/models/ are these interfaces again, written a
-// second time in a form the database can enforce.
-
 export interface User {
   id:       number;
   name:     string;
   email:    string;
-  role:     "student" | "admin" | "instructor";
+  role:     "student" | "librarian" | "admin";
   isActive: boolean;
+  score:    number;
 }
 
 export interface Course {
-  code:     string;
   title:    string;
-  units:    number;
+  code:     string;
   semester: string;
 }
 
 export interface Submission {
   id:          number;
   studentId:   number;
-  courseCode:  string;
-  repoUrl:     string;
-  submittedAt: Date;
-  score?:      number;
+  courseId:    number;
+  status:      "draft" | "submitted" | "reviewed";
+  submittedAt?: string;
 }
 
-// ---------------------------------------------------------------------
+export interface Book {
+  id: number;
+  title: string;
+  author: string;
+  genre: string;
+  availableCopies: number;
+  description: string;
+}
 
-// What the database actually stores.
-//
-// Session 1 wrote `id: number` because there was no database yet -- the
-// mock array in mockData.ts numbered its own rows. MongoDB numbers rows
-// itself, with a 24-character hex string, so every id here is a string.
-//
-// Rather than rewrite the interface, both types below are DERIVED from
-// it with Omit -- the utility type from Session 2. Submission stays the
-// single source of truth: add a field there and these inherit it.
-// ---------------------------------------------------------------------
+export enum ReservationStatus {
+  Pending = "pending",
+  Approved = "approved",
+  Completed = "completed",
+  Cancelled = "cancelled",
+}
+
+export interface Reservation {
+  id: number;
+  userId: number;
+  bookId: number;
+  status: ReservationStatus;
+  reservedAt: string;
+  pickupDeadline?: string;
+}
+
+export interface Review {
+  id: number;
+  reservationId: number;
+  authorId: number;
+  note: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+}
+
+export interface ApiResponse<T> {
+  success: boolean;
+  data: T;
+  message: string;
+}
+
+export type BookSummary = Pick<Book, "id" | "title" | "author">;
+export type ReservationDraft = Omit<Reservation, "id" | "status">;
+export type UserUpdate = Partial<User>;
+export type ReservationLookup = Record<number, Reservation>;
 
 export type UserDoc = Omit<User, "id"> & {
   password: string;
 };
 
-// studentId is an ObjectId, not a string. An ObjectId is an object that
-// PRINTS as 24 hex characters -- it only becomes a real string when the
-// document is turned into JSON. Typing it as string here compiles until
-// the schema declares it, and then fails on every field at once.
-export type SubmissionDoc = Omit<Submission, "id" | "studentId"> & {
-  studentId: Types.ObjectId;
+export type ReservationDoc = Omit<
+  Reservation,
+  "id" | "userId" | "bookId" | "reservedAt" | "pickupDeadline"
+> & {
+  userId: Types.ObjectId;
+  bookId: Types.ObjectId;
+  reservedAt: Date;
+  pickupDeadline?: Date;
 };
 
-// The body a client sends to create one. No id, and no studentId -- the
-// server reads that off the token instead of trusting the request.
-export type NewSubmissionBody = Pick<Submission, "courseCode" | "repoUrl">;
+export interface NewReservationBody {
+  bookId: string;
+  pickupDeadline?: string;
+}
+
+export interface UpdateReservationBody {
+  bookId?: string;
+  status?: ReservationStatus;
+  pickupDeadline?: string;
+}

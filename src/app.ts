@@ -6,7 +6,7 @@ import express, {
 import cors from "cors";
 import mongoose from "mongoose";
 import { authRouter } from "./routes/auth";
-import { submissionRouter } from "./routes/submissions";
+import { reservationRouter } from "./routes/reservations";
 
 // This file builds the app and stops. It never opens a port and never
 // touches the database, so anything that wants an app -- server.ts, or
@@ -32,7 +32,7 @@ app.get("/api/health", (_req: Request, res: Response) => {
 });
 
 app.use("/api/auth", authRouter);
-app.use("/api/submissions", submissionRouter);
+app.use("/api/reservations", reservationRouter);
 
 // Nothing above matched, so the URL does not exist. Without this, an
 // unknown path returns Express's own HTML error page, which is a

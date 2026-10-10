@@ -17,14 +17,12 @@ const userSchema = new Schema<UserDoc>(
     },
     role: {
       type: String,
-      enum: ["student", "admin", "instructor"],
+      enum: ["student", "librarian", "admin"],
       default: "student",
     },
     isActive: { type: Boolean, default: true },
+    score: { type: Number, required: true, default: 0 },
 
-    // The one field itelect4-project's User interface does not have.
-    // select: false keeps it out of every query result unless a query
-    // asks for it by name -- see the .select("+password") in auth.ts.
     password: { type: String, required: true, minlength: 8, select: false },
   },
   { timestamps: true },

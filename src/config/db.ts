@@ -1,6 +1,15 @@
+import { setServers } from "node:dns";
 import mongoose from "mongoose";
 
 export async function connectDB(): Promise<boolean> {
+  const dnsServers = process.env.MONGODB_DNS_SERVERS
+    ?.split(",")
+    .map((server) => server.trim())
+    .filter(Boolean);
+  if (dnsServers?.length) {
+    setServers(dnsServers);
+  }
+
   const uri = process.env.MONGODB_URI;
   const isProduction = process.env.NODE_ENV === "production";
 
