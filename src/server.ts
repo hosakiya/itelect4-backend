@@ -8,7 +8,13 @@ const PORT = Number(process.env.PORT) || 4000;
 // you a server that answers requests for a second or two before it
 // can reach the database, and those fail for a reason nobody finds.
 connectDB()
-  .then(() => {
+  .then((connected) => {
+    if (!connected) {
+      console.log(
+        "App started in development mode without a database connection.",
+      );
+    }
+
     app.listen(PORT, () =>
       console.log(`API on http://localhost:${PORT}`),
     );
