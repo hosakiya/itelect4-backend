@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const branch = "auto-sync";
+const branch = "gt4-part1";
 const debounceMs = 5000;
 const retryMs = 15000;
 const directoryNames = ["src", "scripts", "test", "tests"];
