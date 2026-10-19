@@ -2,13 +2,12 @@
   "name": "it-elect-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "dev":       "tsx watch src/server.ts",
-    "build":     "tsc",
-    "start":     "node dist/server.js",
-    "seed":      "tsx src/seed.ts",
-    "typecheck": "tsc --noEmit"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/server.js",
+    "seed": "tsx src/seed.ts"
   },
   "keywords": [],
   "author": "",
