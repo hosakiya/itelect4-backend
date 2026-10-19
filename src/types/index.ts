@@ -91,3 +91,15 @@ export interface UpdateReservationBody {
   status?: ReservationStatus;
   pickupDeadline?: string;
 }
+
+export type CourseDoc = Pick<
+  Course,
+  "code" | "title" | "semester"
+>;
+
+export type BookDoc = Pick<
+  Book,
+  "title" | "author" | "genre" | "availableCopies" | "description"
+> & {
+  legacyId?: number;
+};

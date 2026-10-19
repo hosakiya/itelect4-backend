@@ -4,22 +4,16 @@ import { connectDB } from "./config/db";
 
 const PORT = Number(process.env.PORT) || 4000;
 
-// Connect FIRST, then listen. Doing it the other way round gives
-// you a server that answers requests for a second or two before it
-// can reach the database, and those fail for a reason nobody finds.
-connectDB()
-  .then((connected) => {
-    if (!connected) {
-      console.log(
-        "App started in development mode without a database connection.",
-      );
-    }
+// Still started here, and started immediately, so a wrong MONGODB_URI
+// is a message in this terminal within five seconds instead of a
+// failed request later. connectDB hands out one connection however
+// many times it is called, so this is the same one the middleware
+// waits for.
+connectDB().catch((err: unknown) => {
+  // Logged, not exited. On Vercel this file may be the entry point,
+  // and killing the process there takes down an instance that was
+  // about to answer requests. The failed request says what happened.
+  console.error("Could not connect to MongoDB:", err);
+});
 
-    app.listen(PORT, () =>
-      console.log(`API on http://localhost:${PORT}`),
-    );
-  })
-  .catch((err: unknown) => {
-    console.error("Could not start:", err);
-    process.exit(1);
-  });
+app.listen(PORT, () => console.log(`API on http://localhost:${PORT}`));
