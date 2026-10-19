@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 // same promise back and waits on the connection already being made.
 let connection: Promise<typeof mongoose> | null = null;
 
-export function connectDB(): Promise<typeof mongoose> {
+export async function connectDatabase(): Promise<void> {
   const dnsServers = process.env.MONGODB_DNS_SERVERS
     ?.split(",")
     .map((server) => server.trim())
@@ -26,26 +26,17 @@ export function connectDB(): Promise<typeof mongoose> {
   }
 
   if (connection === null) {
-    // Without this option, a wrong or unreachable connection string
-    // does not fail -- it sits there for 31 seconds looking like a
-    // hung terminal, and then errors. Five seconds is long enough for
-    // a real Atlas connection and short enough to tell you something
-    // is wrong.
     connection = mongoose
       .connect(uri, { serverSelectionTimeoutMS: 5000 })
       .then((m) => {
-        console.log("MongoDB connected:", m.connection.name);
+        console.log("MongoDB connected");
         return m;
       })
       .catch((err: unknown) => {
-        // A failed attempt must not be the thing that gets kept. Leave
-        // the rejected promise in place and every request from now on
-        // fails with this same five-second-old error, including the
-        // ones sent after the database comes back.
         connection = null;
         throw err;
       });
   }
 
-  return connection;
+  await connection;
 }

@@ -5,7 +5,7 @@ import express, {
 } from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import { connectDB } from "./config/db";
+import { connectDatabase } from "./config/database";
 import { authRouter } from "./routes/auth";
 import { courseRouter } from "./routes/courses";
 import { bookRouter } from "./routes/books";
@@ -24,7 +24,7 @@ app.use(express.json());
 
 // Database connection middleware for serverless/local environments
 app.use(async (_req: Request, _res: Response, next: NextFunction) => {
-  await connectDB();
+  await connectDatabase();
   next();
 });
 

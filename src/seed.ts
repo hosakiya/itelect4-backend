@@ -1,13 +1,13 @@
 import "dotenv/config";
 import mongoose from "mongoose";
-import { connectDB } from "./config/db";
+import { connectDatabase } from "./config/database";
 import { Course } from "./models/Course";
 import { BookModel } from "./models/Book";
 import { COURSES } from "./data/courses";
 import { BOOKS } from "./data/books";
 
 async function seed() {
-  await connectDB();
+  await connectDatabase();
 
   for (const course of COURSES) {
     await Course.updateOne({ code: course.code }, course, { upsert: true });
