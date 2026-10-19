@@ -15,6 +15,11 @@ Configured in `.env` (local) and Vercel Project Settings (production):
 
 *Note: Never commit `.env`. See `.env.example` for reference.*
 
+Vercel serves the Express app exported from `src/server.ts`; the local
+development server listener is not started in the Vercel runtime. MongoDB
+connects when the first request arrives, so configure `MONGODB_URI` in the
+Vercel project environment before deploying.
+
 ## API Endpoints
 - `GET /api/health` - Health check (`{ ok: true, db: true }`)
 - `POST /api/auth/register` - Create account
