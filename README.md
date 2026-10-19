@@ -3,9 +3,9 @@
 Backend REST API for the DLSL Book Reservation & Academic Submission System. Built with Express, TypeScript, and MongoDB Atlas.
 
 ## Live Deployment
-- **Backend API Live URL**: `https://<your-backend-app>.vercel.app`
-- **Frontend App Live URL**: `https://<your-frontend-app>.vercel.app`
-- **Health Check Endpoint**: `https://<your-backend-app>.vercel.app/api/health`
+- **Backend API Live URL**: `https://itelect4-backend-eosin.vercel.app/`
+- **Frontend App Live URL**: `https://itelect4-project-it4b-gt1.vercel.app/`
+- **Health Check Endpoint**: `https://itelect4-backend-eosin.vercel.app/api/health`
 
 ## Environment Variables
 Configured in `.env` (local) and Vercel Project Settings (production):

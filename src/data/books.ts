@@ -400,5 +400,13 @@ export const BOOKS: BookDoc[] = [
     "availableCopies": 3,
     "description": "A Victorian inventor creates a temporal mechanism that catapults him into the distant year 802,701, discovering the Eloi and subterranean Morlocks.",
     "legacyId": 50
+  },
+  {
+    "title": "Bridgerton",
+    "author": "Julia Quinn",
+    "genre": "Romance",
+    "availableCopies": 4,
+    "description": "In Regency-era London, the Bridgerton family navigates society, family expectations, and the search for love.",
+    "legacyId": 51
   }
 ];
