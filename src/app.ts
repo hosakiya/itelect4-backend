@@ -18,7 +18,23 @@ const ALLOWED_ORIGINS = (process.env.CORS_ORIGIN ?? "")
   .map((origin) => origin.trim())
   .filter((origin) => origin !== "");
 
-app.use(cors({ origin: ALLOWED_ORIGINS }));
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (
+        !origin ||
+        ALLOWED_ORIGINS.length === 0 ||
+        ALLOWED_ORIGINS.includes(origin) ||
+        origin.endsWith('.vercel.app') ||
+        origin.includes('localhost')
+      ) {
+        return callback(null, true);
+      }
+      return callback(null, true);
+    },
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
