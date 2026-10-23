@@ -10,6 +10,7 @@ import { authRouter } from "./routes/auth";
 import { courseRouter } from "./routes/courses";
 import { bookRouter } from "./routes/books";
 import { reservationRouter } from "./routes/reservations";
+import { aiRouter } from "./routes/ai";
 
 export const app = express();
 
@@ -56,6 +57,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/courses", courseRouter);
 app.use("/api/books", bookRouter);
 app.use("/api/reservations", reservationRouter);
+app.use("/api/ai", aiRouter);
 
 // 404 handler
 app.use((req: Request, res: Response) => {
