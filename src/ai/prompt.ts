@@ -1,9 +1,9 @@
 import type { Review } from "../schemas/review";
 
-// An alias, not a version. Google points it at the current Flash
+// An alias, not a version. Google points it at the current Flash-Lite
 // model, so a model being retired does not break this app between
 // now and the end of the semester.
-export const MODEL = "gemini-flash-latest";
+export const MODEL = "gemini-flash-lite-latest";
 
 // The system prompt: the instructions that apply to EVERY request,
 // sent separately from what the student typed.
