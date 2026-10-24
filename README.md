@@ -11,9 +11,10 @@ Backend REST API for the DLSL Book Reservation & Academic Submission System. Bui
 Configured in `.env` (local) and Vercel Project Settings (production):
 - `MONGODB_URI`: MongoDB Atlas connection string
 - `JWT_SECRET`: Secret key used for signing JWT tokens
+- `GEMINI_API_KEY`: Google Gemini API key used by the protected AI review route
 - `CORS_ORIGIN`: Allowed origins for CORS (e.g. `http://localhost:5173, https://<your-frontend-app>.vercel.app`)
 
-*Note: Never commit `.env`. See `.env.example` for reference.*
+*Note: Never commit `.env` or expose `GEMINI_API_KEY` in the frontend. See `.env.example` for reference.*
 
 Vercel serves the Express app exported from `src/server.ts`; the local
 development server listener is not started in the Vercel runtime. MongoDB
@@ -31,12 +32,14 @@ Vercel project environment before deploying.
 - `GET /api/reservations` - User reservations (Protected)
 - `POST /api/reservations` - Create reservation (Protected)
 - `PATCH /api/reservations/:id` - Cancel reservation (Protected)
+- `POST /api/ai` - Generate a protected AI review (Protected; rate limited)
 - `GET /api/submissions` - User submissions (Protected)
 - `POST /api/submissions` - Create submission (Protected)
 
 ## Scripts
 - `npm run dev` - Start local development server with tsx watch
 - `npm run build` - TypeScript compilation check (`tsc`)
+- `npm test` - Run backend tests with Vitest and Supertest
 - `npm run seed` - Upsert initial reference resources into MongoDB Atlas
 
 ## Author
