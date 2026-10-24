@@ -39,8 +39,15 @@ app.use(
 
 app.use(express.json());
 
-// Database connection middleware for serverless/local environments
-app.use(async (_req: Request, _res: Response, next: NextFunction) => {
+// Database connection middleware for serverless/local environments.
+// AI reviews only use Gemini, so keep them available even if MongoDB is
+// temporarily unreachable (or is not configured in a local environment).
+app.use(async (req: Request, _res: Response, next: NextFunction) => {
+  if (req.path === "/api/ai" || req.path.startsWith("/api/ai/")) {
+    next();
+    return;
+  }
+
   await connectDatabase();
   next();
 });
