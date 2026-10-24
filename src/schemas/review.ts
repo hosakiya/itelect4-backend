@@ -39,4 +39,7 @@ export const reviewSchema = z.object({
 export type Review = z.infer<typeof reviewSchema>;
 
 // Computed once, when this file is first imported -- not per request.
+// Gemini accepts a subset of JSON Schema for structured output and does
+// not support the document-level `$schema` declaration emitted by Zod.
 export const reviewJsonSchema = z.toJSONSchema(reviewSchema);
+delete reviewJsonSchema.$schema;
