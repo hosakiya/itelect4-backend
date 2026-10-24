@@ -1,5 +1,7 @@
 import { Router, type Request, type Response } from "express";
 import { ReservationModel } from "../models/Reservation";
+import mongoose from "mongoose";
+import { BookModel } from "../models/Book";
 import { requireAuth } from "../middleware/auth";
 import type {
   NewReservationBody,
@@ -44,8 +46,30 @@ reservationRouter.post(
     req: Request<unknown, unknown, NewReservationBody>,
     res: Response,
   ) => {
+    const quantity = Number(req.body.quantity);
+    const purpose = typeof req.body.purpose === "string" ? req.body.purpose.trim() : "";
+    if (!Number.isInteger(quantity) || quantity < 1 || quantity > 3) {
+      res.status(400).json({ message: "Choose between 1 and 3 copies." });
+      return;
+    }
+    if (purpose.length < 40 || purpose.length > 1000) {
+      res.status(400).json({ message: "Please describe your borrowing purpose in at least a few sentences." });
+      return;
+    }
+
+    const book = mongoose.Types.ObjectId.isValid(req.body.bookId)
+      ? await BookModel.findById(req.body.bookId)
+      : await BookModel.findOne({ legacyId: Number(req.body.bookId) });
+    if (!book || book.availableCopies < quantity) {
+      res.status(409).json({ message: "The requested number of copies is not currently available." });
+      return;
+    }
+
     const reservation = await ReservationModel.create({
       ...req.body,
+      quantity,
+      purpose,
+      borrowingPeriod: "Confirm with LRC at checkout",
       userId: req.userId,
     });
 

@@ -46,6 +46,9 @@ export interface Reservation {
   status: ReservationStatus;
   reservedAt: string;
   pickupDeadline?: string;
+  quantity: number;
+  purpose: string;
+  borrowingPeriod: string;
 }
 
 export interface Review {
@@ -84,6 +87,8 @@ export type ReservationDoc = Omit<
 export interface NewReservationBody {
   bookId: string;
   pickupDeadline?: string;
+  quantity: number;
+  purpose: string;
 }
 
 export interface UpdateReservationBody {

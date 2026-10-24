@@ -23,6 +23,9 @@ const reservationSchema = new Schema<ReservationDoc>({
     type: Date,
     min: [new Date(), "pickupDeadline must not be in the past"],
   },
+  quantity: { type: Number, required: true, min: 1, max: 3, default: 1 },
+  purpose: { type: String, required: true, minlength: 20, maxlength: 1000, trim: true },
+  borrowingPeriod: { type: String, required: true, default: "Confirm with LRC at checkout" },
 });
 
 reservationSchema.set("toJSON", {
