@@ -49,6 +49,7 @@ export interface Reservation {
   quantity: number;
   purpose: string;
   borrowingPeriod: string;
+  inventoryClaimed?: boolean;
 }
 
 export interface Review {
@@ -82,6 +83,7 @@ export type ReservationDoc = Omit<
   bookId: Types.ObjectId;
   reservedAt: Date;
   pickupDeadline?: Date;
+  inventoryClaimed: boolean;
 };
 
 export interface NewReservationBody {
