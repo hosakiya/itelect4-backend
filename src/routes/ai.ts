@@ -52,6 +52,16 @@ aiRouter.post("/", async (req: Request, res: Response) => {
       return;
     }
 
+    // A fallback model was already attempted for 503s. If it is also
+    // unavailable, tell the user this is a temporary capacity issue.
+    if (err instanceof ApiError && err.status === 503) {
+      console.error(err);
+      res.status(503).json({
+        message: "The AI service is busy right now. Please try again shortly.",
+      });
+      return;
+    }
+
     // Gemini refused, failed, or answered with something unusable.
     // Log the real reason for Vercel Runtime Logs; the browser gets a 502 with our message.
     if (err instanceof ApiError || err instanceof AiReplyError) {

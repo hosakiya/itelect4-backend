@@ -1,10 +1,14 @@
-import { GoogleGenAI, type Content } from "@google/genai";
+import { ApiError, GoogleGenAI, type Content } from "@google/genai";
 import { MODEL, SYSTEM_PROMPT, EXAMPLES, wrap } from "./prompt";
 import {
   reviewSchema,
   reviewJsonSchema,
   type Review,
 } from "../schemas/review";
+
+// Keep a stable Flash model ready for temporary capacity issues on the
+// latest alias. Google recommends switching models when a model returns 503.
+const FALLBACK_MODEL = "gemini-3.6-flash";
 
 // The same shape as connectDB: nothing happens when this file is imported.
 // The client is made on the first call, so a missing key is an explicit error
@@ -47,16 +51,31 @@ export class AiReplyError extends Error {}
 export async function reviewProject(
   description: string,
 ): Promise<Review> {
-  const response = await getClient().models.generateContent({
-    model: MODEL,
-    contents: buildContents(description),
-    config: {
-      systemInstruction: SYSTEM_PROMPT,
-      // JSON, in exactly this shape.
-      responseMimeType: "application/json",
-      responseJsonSchema: reviewJsonSchema,
-    },
-  });
+  const generate = (model: string) =>
+    getClient().models.generateContent({
+      model,
+      contents: buildContents(description),
+      config: {
+        systemInstruction: SYSTEM_PROMPT,
+        // JSON, in exactly this shape.
+        responseMimeType: "application/json",
+        responseJsonSchema: reviewJsonSchema,
+      },
+    });
+
+  let response;
+  try {
+    response = await generate(MODEL);
+  } catch (err) {
+    if (!(err instanceof ApiError) || err.status !== 503) {
+      throw err;
+    }
+
+    console.warn(
+      `Gemini model ${MODEL} is unavailable; trying fallback ${FALLBACK_MODEL}.`,
+    );
+    response = await generate(FALLBACK_MODEL);
+  }
 
   // undefined when there is no text at all (e.g. blocked by safety filters)
   const text = response.text;
