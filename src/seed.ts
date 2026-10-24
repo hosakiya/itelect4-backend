@@ -12,6 +12,7 @@ async function seed() {
   for (const course of COURSES) {
     await Course.updateOne({ code: course.code }, course, { upsert: true });
   }
+  await Course.deleteOne({ code: "CSSWENG" });
   console.log(`${COURSES.length} courses in ${mongoose.connection.name}`);
 
   for (const book of BOOKS) {
