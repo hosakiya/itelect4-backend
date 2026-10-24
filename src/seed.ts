@@ -15,7 +15,16 @@ async function seed() {
   console.log(`${COURSES.length} courses in ${mongoose.connection.name}`);
 
   for (const book of BOOKS) {
-    await BookModel.updateOne({ title: book.title }, book, { upsert: true });
+    const { availableCopies, ...catalogFields } = book;
+    await BookModel.updateOne(
+      { title: book.title },
+      {
+        $set: catalogFields,
+        // Stock is live catalog data; set its initial value only for new books.
+        $setOnInsert: { availableCopies },
+      },
+      { upsert: true },
+    );
   }
   console.log(`${BOOKS.length} books in ${mongoose.connection.name}`);
 
