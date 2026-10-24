@@ -23,6 +23,11 @@ const bookSchema = new Schema<BookDoc>({
     min: 0,
     default: 1,
   },
+  totalCopies: {
+    type: Number,
+    min: 0,
+    default: 1,
+  },
   description: {
     type: String,
     required: true,

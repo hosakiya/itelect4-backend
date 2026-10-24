@@ -5,7 +5,7 @@ export const BOOKS: BookDoc[] = [
     "title": "A Game of Thrones",
     "author": "George R. R. Martin",
     "genre": "Fantasy",
-    "availableCopies": 4,
+    "availableCopies": 1,
     "description": "Nobles and royals vie for control of the Iron Throne as an ancient supernatural evil awakens in the far north.",
     "legacyId": 1
   },
@@ -13,7 +13,7 @@ export const BOOKS: BookDoc[] = [
     "title": "A Wizard of Earthsea",
     "author": "Ursula K. Le Guin",
     "genre": "Fantasy",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A young wizard named Ged accidentally releases a shadow creature and embarks on a dangerous journey across the archipelago.",
     "legacyId": 2
   },
@@ -21,7 +21,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Eragon",
     "author": "Christopher Paolini",
     "genre": "Fantasy",
-    "availableCopies": 5,
+    "availableCopies": 1,
     "description": "A poor farm boy discovers a polished blue stone that hatches into a dragon, thrusting him into an epic destiny.",
     "legacyId": 3
   },
@@ -29,7 +29,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Harry Potter and the Sorcerer's Stone",
     "author": "J. K. Rowling",
     "genre": "Fantasy",
-    "availableCopies": 6,
+    "availableCopies": 2,
     "description": "An orphaned boy discovers on his eleventh birthday that he is a wizard and attends Hogwarts School of Witchcraft and Wizardry.",
     "legacyId": 4
   },
@@ -37,7 +37,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Mistborn: The Final Empire",
     "author": "Brandon Sanderson",
     "genre": "Fantasy",
-    "availableCopies": 4,
+    "availableCopies": 1,
     "description": "In an ash-choked empire ruled by an immortal tyrant, a crew of thieves plans the ultimate heist to overthrow a god.",
     "legacyId": 5
   },
@@ -45,7 +45,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Percy Jackson and the Lightning Thief",
     "author": "Rick Riordan",
     "genre": "Fantasy",
-    "availableCopies": 5,
+    "availableCopies": 2,
     "description": "A modern teenager discovers he is the demigod son of Poseidon and must retrieve Zeus stolen master bolt to prevent war.",
     "legacyId": 6
   },
@@ -53,7 +53,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Fellowship of the Ring",
     "author": "J. R. R. Tolkien",
     "genre": "Fantasy",
-    "availableCopies": 4,
+    "availableCopies": 1,
     "description": "Frodo Baggins inherits the One Ring and must journey toward Mount Doom accompanied by an alliance of heroes.",
     "legacyId": 7
   },
@@ -61,7 +61,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Hobbit",
     "author": "J. R. R. Tolkien",
     "genre": "Fantasy",
-    "availableCopies": 5,
+    "availableCopies": 2,
     "description": "Reluctant hobbit Bilbo Baggins is persuaded by the wizard Gandalf to join thirteen dwarves on a quest to reclaim their mountain kingdom.",
     "legacyId": 8
   },
@@ -69,7 +69,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Lion, the Witch and the Wardrobe",
     "author": "C. S. Lewis",
     "genre": "Fantasy",
-    "availableCopies": 3,
+    "availableCopies": 1,
     "description": "Four siblings stumble through a magical wardrobe into the mystical land of Narnia, trapped in eternal winter by the White Witch.",
     "legacyId": 9
   },
@@ -85,7 +85,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Bird Box",
     "author": "Josh Malerman",
     "genre": "Horror",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "In a post-apocalyptic world where catching sight of an unseen presence drives people mad, a mother must navigate a river blindfolded with two children.",
     "legacyId": 11
   },
@@ -93,7 +93,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Carrie",
     "author": "Stephen King",
     "genre": "Horror",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "A bullied high school girl with telekinetic abilities is pushed past her limits at senior prom, triggering catastrophic vengeance.",
     "legacyId": 12
   },
@@ -101,7 +101,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Dracula",
     "author": "Bram Stoker",
     "genre": "Horror",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "The definitive gothic vampire tale documenting Count Dracula attempt to relocate from Transylvania to England to spread the undead curse.",
     "legacyId": 13
   },
@@ -109,7 +109,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Frankenstein",
     "author": "Mary Shelley",
     "genre": "Horror",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "An ambitious young scientist creates life through forbidden chemistry, only to abandon his grotesque creature to tragic consequences.",
     "legacyId": 14
   },
@@ -125,7 +125,7 @@ export const BOOKS: BookDoc[] = [
     "title": "It",
     "author": "Stephen King",
     "genre": "Horror",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "Seven outcast childhood friends battle an ancient, shape-shifting predator that terrorizes the small town of Derry, Maine every 27 years.",
     "legacyId": 16
   },
@@ -133,7 +133,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Pet Sematary",
     "author": "Stephen King",
     "genre": "Horror",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A doctor discovers an ancient burial ground deep in the Maine woods behind his family new home that possesses dark resurrective power.",
     "legacyId": 17
   },
@@ -149,7 +149,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Haunting of Hill House",
     "author": "Shirley Jackson",
     "genre": "Horror",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "An investigator and three guests stay in a notorious Victorian mansion known for sinister supernatural events, uncovering psychological terror.",
     "legacyId": 19
   },
@@ -157,7 +157,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Shining",
     "author": "Stephen King",
     "genre": "Horror",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "An aspiring writer takes a winter caretaker position at the isolated Overlook Hotel, where demonic presences torment his gifted psychic son.",
     "legacyId": 20
   },
@@ -165,7 +165,7 @@ export const BOOKS: BookDoc[] = [
     "title": "And Then There Were None",
     "author": "Agatha Christie",
     "genre": "Mystery & Thriller",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "Ten strangers are lured to an isolated island mansion where each is accused of past crimes and picked off one by one.",
     "legacyId": 21
   },
@@ -173,7 +173,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Big Little Lies",
     "author": "Liane Moriarty",
     "genre": "Mystery & Thriller",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "In an affluent coastal suburb, friendships, rumors, and domestic secrets culminate in a fatal school trivia night incident.",
     "legacyId": 22
   },
@@ -181,7 +181,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Gone Girl",
     "author": "Gillian Flynn",
     "genre": "Mystery & Thriller",
-    "availableCopies": 5,
+    "availableCopies": 2,
     "description": "On his fifth wedding anniversary, a man reports his wife missing, but media scrutiny and strange clues make him the prime suspect.",
     "legacyId": 23
   },
@@ -189,7 +189,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Murder on the Orient Express",
     "author": "Agatha Christie",
     "genre": "Mystery & Thriller",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "Detective Hercule Poirot investigates the murder of an American tycoon aboard a snowbound luxury passenger train in Yugoslavia.",
     "legacyId": 24
   },
@@ -197,7 +197,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Rebecca",
     "author": "Daphne du Maurier",
     "genre": "Mystery & Thriller",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A young bride moves into her new husband magnificent estate of Manderley, only to find the haunting memory of his first wife lingering everywhere.",
     "legacyId": 25
   },
@@ -205,7 +205,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Da Vinci Code",
     "author": "Dan Brown",
     "genre": "Mystery & Thriller",
-    "availableCopies": 5,
+    "availableCopies": 2,
     "description": "A Harvard symbologist and a cryptologist follow clues hidden in Da Vinci masterpieces to uncover a secret society guarding religious history.",
     "legacyId": 26
   },
@@ -213,7 +213,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Girl on the Train",
     "author": "Paula Hawkins",
     "genre": "Mystery & Thriller",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "A daily train commuter obsessed with watching a seemingly ideal couple through the window becomes entangled in a shocking missing persons case.",
     "legacyId": 27
   },
@@ -221,7 +221,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Girl with the Dragon Tattoo",
     "author": "Stieg Larsson",
     "genre": "Mystery & Thriller",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "A disgraced financial journalist and a genius hacker investigate the four-decade-old disappearance of a wealthy industrialist niece.",
     "legacyId": 28
   },
@@ -229,7 +229,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Silent Patient",
     "author": "Alex Michaelides",
     "genre": "Mystery & Thriller",
-    "availableCopies": 5,
+    "availableCopies": 2,
     "description": "A celebrated painter shoots her husband five times in the face and never speaks another word; a psychotherapist becomes determined to uncover why.",
     "legacyId": 29
   },
@@ -237,7 +237,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Woman in the Window",
     "author": "A. J. Finn",
     "genre": "Mystery & Thriller",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "An agoraphobic child psychologist in New York spends her days watching neighbors through her window until she witnesses something terrible.",
     "legacyId": 30
   },
@@ -253,7 +253,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Beach Read",
     "author": "Emily Henry",
     "genre": "Romance",
-    "availableCopies": 4,
+    "availableCopies": 3,
     "description": "A romance writer who no longer believes in love and a cynical literary novelist swap genres for the summer to overcome writer block.",
     "legacyId": 32
   },
@@ -269,7 +269,7 @@ export const BOOKS: BookDoc[] = [
     "title": "It Ends with Us",
     "author": "Colleen Hoover",
     "genre": "Romance",
-    "availableCopies": 5,
+    "availableCopies": 3,
     "description": "A young businesswoman in Boston navigates a passionate relationship with a neurosurgeon while confronting memories of her past.",
     "legacyId": 34
   },
@@ -277,7 +277,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Me Before You",
     "author": "Jojo Moyes",
     "genre": "Romance",
-    "availableCopies": 4,
+    "availableCopies": 3,
     "description": "An eccentric, cheerful young woman accepts a job caring for a wealthy former quadriplegic adventurer, transforming both of their lives.",
     "legacyId": 35
   },
@@ -285,7 +285,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "genre": "Romance",
-    "availableCopies": 5,
+    "availableCopies": 3,
     "description": "The spirited Elizabeth Bennet navigates social expectations, family eccentricities, and her own misconceptions about the aristocratic Mr. Darcy.",
     "legacyId": 36
   },
@@ -293,7 +293,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Red, White & Royal Blue",
     "author": "Casey McQuiston",
     "genre": "Romance",
-    "availableCopies": 4,
+    "availableCopies": 3,
     "description": "America First Son and the Prince of Wales engage in a staged friendship for diplomacy that turns into secret romance.",
     "legacyId": 37
   },
@@ -301,7 +301,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Fault in Our Stars",
     "author": "John Green",
     "genre": "Romance",
-    "availableCopies": 4,
+    "availableCopies": 3,
     "description": "Two witty teenage cancer patients fall deeply in love after meeting at a support group and embark on a pilgrimage to Amsterdam.",
     "legacyId": 38
   },
@@ -317,7 +317,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Notebook",
     "author": "Nicholas Sparks",
     "genre": "Romance",
-    "availableCopies": 4,
+    "availableCopies": 3,
     "description": "The enduring love story between Noah Calhoun and Allie Nelson, spanning decades and overcoming social class differences.",
     "legacyId": 40
   },
@@ -325,7 +325,7 @@ export const BOOKS: BookDoc[] = [
     "title": "1984",
     "author": "George Orwell",
     "genre": "Science Fiction",
-    "availableCopies": 5,
+    "availableCopies": 1,
     "description": "Winston Smith struggles against the omnipresent surveillance, historical revisionism, and psychological control of Big Brother in Oceania.",
     "legacyId": 41
   },
@@ -333,7 +333,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Brave New World",
     "author": "Aldous Huxley",
     "genre": "Science Fiction",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "A futuristic World State genetically breeds citizens into castes and pacifies society with synthetic happiness and state conditioning.",
     "legacyId": 42
   },
@@ -341,7 +341,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Dune",
     "author": "Frank Herbert",
     "genre": "Science Fiction",
-    "availableCopies": 5,
+    "availableCopies": 1,
     "description": "Paul Atreides travels to the dangerous desert planet Arrakis, the sole source of the universe most valuable resource: the spice melange.",
     "legacyId": 43
   },
@@ -349,7 +349,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Ender's Game",
     "author": "Orson Scott Card",
     "genre": "Science Fiction",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "A gifted young boy is recruited to an elite military Battle School in orbit to train for an impending alien invasion.",
     "legacyId": 44
   },
@@ -357,7 +357,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Fahrenheit 451",
     "author": "Ray Bradbury",
     "genre": "Science Fiction",
-    "availableCopies": 3,
+    "availableCopies": 1,
     "description": "In a dystopian American future where critical thought is outlawed, a fireman responsible for burning illegal books begins to question his society.",
     "legacyId": 45
   },
@@ -365,7 +365,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Foundation",
     "author": "Isaac Asimov",
     "genre": "Science Fiction",
-    "availableCopies": 4,
+    "availableCopies": 2,
     "description": "Mathematician Hari Seldon uses psychohistory to predict the fall of the Galactic Empire and creates an archive to preserve human civilization.",
     "legacyId": 46
   },
@@ -373,7 +373,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Ready Player One",
     "author": "Ernest Cline",
     "genre": "Science Fiction",
-    "availableCopies": 5,
+    "availableCopies": 1,
     "description": "In a grim near future, teenager Wade Watts competes in a global virtual reality Easter egg hunt to inherit a trillion-dollar fortune.",
     "legacyId": 47
   },
@@ -381,7 +381,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Hunger Games",
     "author": "Suzanne Collins",
     "genre": "Science Fiction",
-    "availableCopies": 6,
+    "availableCopies": 2,
     "description": "In the ruins of North America, sixteen-year-old Katniss Everdeen volunteers to take her sister place in a televised fight to the death.",
     "legacyId": 48
   },
@@ -389,7 +389,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Martian",
     "author": "Andy Weir",
     "genre": "Science Fiction",
-    "availableCopies": 4,
+    "availableCopies": 1,
     "description": "An astronaut is mistakenly stranded on Mars during a dust storm and must rely on his engineering and botanical skills to survive.",
     "legacyId": 49
   },
@@ -397,7 +397,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Time Machine",
     "author": "H. G. Wells",
     "genre": "Science Fiction",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Victorian inventor creates a temporal mechanism that catapults him into the distant year 802,701, discovering the Eloi and subterranean Morlocks.",
     "legacyId": 50
   },
@@ -405,7 +405,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Bridgerton",
     "author": "Julia Quinn",
     "genre": "Romance",
-    "availableCopies": 4,
+    "availableCopies": 3,
     "description": "In Regency-era London, the Bridgerton family navigates society, family expectations, and the search for love.",
     "legacyId": 51
   },
@@ -413,7 +413,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Atomic Habits",
     "author": "James Clear",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Self-Help / Personal Development title by James Clear.",
     "legacyId": 52
   },
@@ -421,7 +421,7 @@ export const BOOKS: BookDoc[] = [
     "title": "A Brief History of Time",
     "author": "Stephen Hawking",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Popular Science / Cosmology title by Stephen Hawking.",
     "legacyId": 53
   },
@@ -429,7 +429,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The 7 Habits of Highly Effective People",
     "author": "Stephen R. Covey",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Self-Help / Personal Development title by Stephen R. Covey.",
     "legacyId": 54
   },
@@ -437,7 +437,7 @@ export const BOOKS: BookDoc[] = [
     "title": "How to Win Friends and Influence People",
     "author": "Dale Carnegie",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Self-Help / Communication title by Dale Carnegie.",
     "legacyId": 55
   },
@@ -445,7 +445,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Mindset: The New Psychology of Success",
     "author": "Carol S. Dweck",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Psychology / Personal Development title by Carol S. Dweck.",
     "legacyId": 56
   },
@@ -453,7 +453,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Power of Habit",
     "author": "Charles Duhigg",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Psychology / Behavioral Science title by Charles Duhigg.",
     "legacyId": 57
   },
@@ -461,7 +461,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Outliers: The Story of Success",
     "author": "Malcolm Gladwell",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Nonfiction / Psychology / Sociology title by Malcolm Gladwell.",
     "legacyId": 58
   },
@@ -469,7 +469,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Grit: The Power of Passion and Perseverance",
     "author": "Angela Duckworth",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Psychology / Personal Development title by Angela Duckworth.",
     "legacyId": 59
   },
@@ -477,7 +477,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Jose Rizal: Life, Works and Writings of a Genius, Writer, Scientist and National Hero",
     "author": "Gregorio F. Zaide and Sonia M. Zaide",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Biography / Philippine History title by Gregorio F. Zaide and Sonia M. Zaide.",
     "legacyId": 60
   },
@@ -485,7 +485,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Philippine History",
     "author": "Maria Christine N. Halili",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A History / Education title by Maria Christine N. Halili.",
     "legacyId": 61
   },
@@ -493,7 +493,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Noli Me Tangere",
     "author": "José Rizal",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Historical Fiction / Social Commentary title by José Rizal.",
     "legacyId": 62
   },
@@ -501,7 +501,7 @@ export const BOOKS: BookDoc[] = [
     "title": "El Filibusterismo",
     "author": "José Rizal",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Historical Fiction / Political Novel title by José Rizal.",
     "legacyId": 63
   },
@@ -509,7 +509,7 @@ export const BOOKS: BookDoc[] = [
     "title": "History of the Filipino People",
     "author": "Teodoro A. Agoncillo",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Philippine History / Nonfiction title by Teodoro A. Agoncillo.",
     "legacyId": 64
   },
@@ -517,7 +517,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Rizal Without the Overcoat",
     "author": "Ambeth R. Ocampo",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Biography / Philippine History title by Ambeth R. Ocampo.",
     "legacyId": 65
   },
@@ -525,7 +525,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Culture and History",
     "author": "Nick Joaquin",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Cultural Studies / Philippine History title by Nick Joaquin.",
     "legacyId": 66
   },
@@ -533,7 +533,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Barangay: Sixteenth-Century Philippine Culture and Society",
     "author": "William Henry Scott",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Philippine History / Anthropology title by William Henry Scott.",
     "legacyId": 67
   },
@@ -541,7 +541,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Philippines: A Past Revisited",
     "author": "Renato Constantino",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Philippine History / Political History title by Renato Constantino.",
     "legacyId": 68
   },
@@ -549,7 +549,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Conjugal Dictatorship of Ferdinand and Imelda Marcos",
     "author": "Primitivo Mijares",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Political History / Investigative Nonfiction title by Primitivo Mijares.",
     "legacyId": 69
   },
@@ -557,7 +557,7 @@ export const BOOKS: BookDoc[] = [
     "title": "A History of the Philippines: From Indios Bravos to Filipinos",
     "author": "Luis H. Francia",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Philippine History title by Luis H. Francia.",
     "legacyId": 70
   },
@@ -565,7 +565,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Revolt of the Masses: The Story of Bonifacio and the Katipunan",
     "author": "Teodoro A. Agoncillo",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Philippine Revolutionary History title by Teodoro A. Agoncillo.",
     "legacyId": 71
   },
@@ -573,7 +573,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Mosby's Pocket Dictionary of Medicine, Nursing, Allied Health",
     "author": "Mary A. C. Allen",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Medical Reference title by Mary A. C. Allen.",
     "legacyId": 72
   },
@@ -581,7 +581,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Dictionary of Latin Legal Terms and Other Foreign Terminologies",
     "author": "Tomas D. Andres",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Legal Reference / Dictionary title by Tomas D. Andres.",
     "legacyId": 73
   },
@@ -589,7 +589,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The New Dictionary of Catholic Spirituality",
     "author": "Michael E. Downey",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Religion / Theology Reference title by Michael E. Downey.",
     "legacyId": 74
   },
@@ -597,7 +597,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The McGraw-Hill Dictionary of Misspelled and Easily Confused Words",
     "author": "David Downing and Deborah K. Williams",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Language Reference title by David Downing and Deborah K. Williams.",
     "legacyId": 75
   },
@@ -605,7 +605,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Webster's Third New International Dictionary of the English Language Unabridged",
     "author": "Philip B. Gove, editor",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Dictionary / Linguistics title by Philip B. Gove, editor.",
     "legacyId": 76
   },
@@ -613,7 +613,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Oxford Companion to Twentieth-Century Poetry in English",
     "author": "Ian Hamilton, editor",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Poetry Reference / Literary Criticism title by Ian Hamilton, editor.",
     "legacyId": 77
   },
@@ -621,7 +621,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Harrap's Spanish and English Business Dictionary",
     "author": "Author not specified",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Business Reference / Language title by Author not specified.",
     "legacyId": 78
   },
@@ -629,7 +629,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Dictionary of Cultural Literacy",
     "author": "E. D. Hirsch, Joseph F. Kett, and James Trefil",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Cultural Studies / Reference title by E. D. Hirsch, Joseph F. Kett, and James Trefil.",
     "legacyId": 79
   },
@@ -637,7 +637,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Food and Beverage Reference Dictionary",
     "author": "Adela Jamorabo-Ruiz",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Hospitality / Culinary Reference title by Adela Jamorabo-Ruiz.",
     "legacyId": 80
   },
@@ -645,7 +645,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Dictionary of Computer Science, Engineering, and Technology",
     "author": "Philip A. Laplante",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Computer Science / Technical Reference title by Philip A. Laplante.",
     "legacyId": 81
   },
@@ -653,7 +653,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Binisaya-English English-Binisaya Dictionary",
     "author": "Eduardo T. Makabenta",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Language Reference / Dictionary title by Eduardo T. Makabenta.",
     "legacyId": 82
   },
@@ -661,7 +661,7 @@ export const BOOKS: BookDoc[] = [
     "title": "McGraw-Hill: Dictionary of Computing & Communications",
     "author": "Author not specified",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Information Technology / Dictionary title by Author not specified.",
     "legacyId": 83
   },
@@ -669,7 +669,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Cambridge Guide to Literature in English",
     "author": "Ian Ousby and Doris Lessing",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Literary Reference title by Ian Ousby and Doris Lessing.",
     "legacyId": 84
   },
@@ -677,7 +677,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Technical and Business English-Filipino Wordbook",
     "author": "Renato Perdon and Renato Pedron",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Language / Business Reference title by Renato Perdon and Renato Pedron.",
     "legacyId": 85
   },
@@ -685,7 +685,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Continuum Dictionary of Religion",
     "author": "Michael Pye",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Religion / Theology Reference title by Michael Pye.",
     "legacyId": 86
   },
@@ -693,7 +693,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Metaphorically Speaking: A Dictionary of 3,800 Picturesque Idiomatic Expressions",
     "author": "N. E. Renton",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Language Reference / Idioms title by N. E. Renton.",
     "legacyId": 87
   },
@@ -701,7 +701,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Feed a Cold, Starve a Fever: A Dictionary of Medical Folklore",
     "author": "Carol A. Rinzler",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Medical Folklore / Health Reference title by Carol A. Rinzler.",
     "legacyId": 88
   },
@@ -709,7 +709,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Encyclopaedia of Everlastings: The Complete Guide to Growing, Preserving, and Arranging Dried Flowers",
     "author": "Barbara R. Rogers",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Gardening / Horticulture title by Barbara R. Rogers.",
     "legacyId": 89
   },
@@ -717,7 +717,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Master Dictionary of Food and Wine",
     "author": "Joyce Rubash",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Culinary Arts / Food and Wine Reference title by Joyce Rubash.",
     "legacyId": 90
   },
@@ -725,7 +725,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Vicassan's Pilipino-English Dictionary",
     "author": "Araceli Santos",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Filipino Language / Dictionary title by Araceli Santos.",
     "legacyId": 91
   },
@@ -733,7 +733,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Shark and Other Sea Creatures Dictionary: An A to Z of Sea Life",
     "author": "Author not specified",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Marine Biology / Nature Reference title by Author not specified.",
     "legacyId": 92
   },
@@ -741,7 +741,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Worldwide Dictionaries: French",
     "author": "Richard Switzer",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Language Reference / French title by Richard Switzer.",
     "legacyId": 93
   },
@@ -749,7 +749,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Hippocrene Practical Dictionaries: English-Français; Français-Anglais",
     "author": "Rosalind B. A. Williams",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Language Reference / Translation title by Rosalind B. A. Williams.",
     "legacyId": 94
   },
@@ -757,7 +757,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The New Comprehensive American Rhyming Dictionary",
     "author": "Sue Young",
     "genre": "Dictionaries",
-    "availableCopies": 3,
+    "availableCopies": 7,
     "description": "A Language Reference / Poetry title by Sue Young.",
     "legacyId": 95
   },
@@ -837,7 +837,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
     "author": "Robert C. Martin",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Software Engineering / Programming title by Robert C. Martin.",
     "legacyId": 105
   },
@@ -845,7 +845,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Pragmatic Programmer",
     "author": "Andrew Hunt and David Thomas",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Software Development / Programming title by Andrew Hunt and David Thomas.",
     "legacyId": 106
   },
@@ -853,7 +853,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Introduction to Algorithms",
     "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Computer Science / Algorithms title by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.",
     "legacyId": 107
   },
@@ -861,7 +861,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Computer Networking: A Top-Down Approach",
     "author": "James F. Kurose and Keith W. Ross",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Computer Networking title by James F. Kurose and Keith W. Ross.",
     "legacyId": 108
   },
@@ -869,7 +869,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Artificial Intelligence: A Modern Approach",
     "author": "Stuart Russell and Peter Norvig",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Artificial Intelligence / Computer Science title by Stuart Russell and Peter Norvig.",
     "legacyId": 109
   },
@@ -877,7 +877,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Database System Concepts",
     "author": "Abraham Silberschatz, Henry F. Korth, and S. Sudarshan",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Database Management title by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan.",
     "legacyId": 110
   },
@@ -885,7 +885,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Operating System Concepts",
     "author": "Abraham Silberschatz, Peter B. Galvin, and Greg Gagne",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Operating Systems title by Abraham Silberschatz, Peter B. Galvin, and Greg Gagne.",
     "legacyId": 111
   },
@@ -893,7 +893,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Design of Everyday Things",
     "author": "Don Norman",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Design / Human-Computer Interaction title by Don Norman.",
     "legacyId": 112
   },
@@ -909,7 +909,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Little Women",
     "author": "Louisa May Alcott",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Coming-of-Age / Classic Fiction title by Louisa May Alcott.",
     "legacyId": 114
   },
@@ -917,7 +917,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Classic Literature / Tragedy title by F. Scott Fitzgerald.",
     "legacyId": 115
   },
@@ -925,7 +925,7 @@ export const BOOKS: BookDoc[] = [
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Southern Gothic / Social Justice Fiction title by Harper Lee.",
     "legacyId": 116
   },
@@ -933,7 +933,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Book Thief",
     "author": "Markus Zusak",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Historical Fiction / War Fiction title by Markus Zusak.",
     "legacyId": 117
   },
@@ -941,7 +941,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Florante at Laura",
     "author": "Francisco Balagtas",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Filipino Classical Literature / Poetry title by Francisco Balagtas.",
     "legacyId": 118
   },
@@ -949,7 +949,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Mga Ibong Mandaragit",
     "author": "Amado V. Hernandez",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Social Realism / Political Fiction title by Amado V. Hernandez.",
     "legacyId": 119
   },
@@ -957,7 +957,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Banaag at Sikat",
     "author": "Lope K. Santos",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Social Realism / Political Novel title by Lope K. Santos.",
     "legacyId": 120
   },
@@ -965,7 +965,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Woman Who Had Two Navels",
     "author": "Nick Joaquin",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Literary Fiction / Philippine Literature title by Nick Joaquin.",
     "legacyId": 121
   },
@@ -973,7 +973,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Dogeaters",
     "author": "Jessica Hagedorn",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Historical Fiction / Political Satire title by Jessica Hagedorn.",
     "legacyId": 122
   },
@@ -981,7 +981,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Making of a Filipino: A Story of Philippine Colonial Politics",
     "author": "Ruby R. Paredes, editor",
     "genre": "Historical",
-    "availableCopies": 3,
+    "availableCopies": 2,
     "description": "A Philippine History / Political Studies title by Ruby R. Paredes, editor.",
     "legacyId": 123
   },
@@ -989,7 +989,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Computer Science: An Overview",
     "author": "J. Glenn Brookshear and Dennis Brylow",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Computer Science title by J. Glenn Brookshear and Dennis Brylow.",
     "legacyId": 124
   },
@@ -997,7 +997,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Computer Networks",
     "author": "Andrew S. Tanenbaum and David J. Wetherall",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Computer Networking title by Andrew S. Tanenbaum and David J. Wetherall.",
     "legacyId": 125
   },
@@ -1005,7 +1005,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Modern Operating Systems",
     "author": "Andrew S. Tanenbaum and Herbert Bos",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Operating Systems title by Andrew S. Tanenbaum and Herbert Bos.",
     "legacyId": 126
   },
@@ -1013,7 +1013,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Fundamentals of Database Systems",
     "author": "Ramez Elmasri and Shamkant B. Navathe",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Database Management title by Ramez Elmasri and Shamkant B. Navathe.",
     "legacyId": 127
   },
@@ -1021,7 +1021,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Deep Learning",
     "author": "Ian Goodfellow, Yoshua Bengio, and Aaron Courville",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Artificial Intelligence / Machine Learning title by Ian Goodfellow, Yoshua Bengio, and Aaron Courville.",
     "legacyId": 128
   },
@@ -1029,7 +1029,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
     "author": "Aurélien Géron",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Machine Learning / Programming title by Aurélien Géron.",
     "legacyId": 129
   },
@@ -1037,7 +1037,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Pattern Recognition and Machine Learning",
     "author": "Christopher M. Bishop",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Machine Learning / Statistics title by Christopher M. Bishop.",
     "legacyId": 130
   },
@@ -1045,7 +1045,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Software Engineering",
     "author": "Ian Sommerville",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Software Engineering title by Ian Sommerville.",
     "legacyId": 131
   },
@@ -1053,7 +1053,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Systems Analysis and Design",
     "author": "Kenneth E. Kendall and Julie E. Kendall",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Information Systems / Systems Analysis title by Kenneth E. Kendall and Julie E. Kendall.",
     "legacyId": 132
   },
@@ -1061,7 +1061,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Systems Analysis and Design in a Changing World",
     "author": "John W. Satzinger, Robert B. Jackson, and Stephen D. Burd",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Information Systems / Systems Design title by John W. Satzinger, Robert B. Jackson, and Stephen D. Burd.",
     "legacyId": 133
   },
@@ -1069,7 +1069,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability",
     "author": "Steve Krug",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Web Design / Usability title by Steve Krug.",
     "legacyId": 134
   },
@@ -1077,7 +1077,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Learning Web Design",
     "author": "Jennifer Niederst Robbins",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Web Development / Web Design title by Jennifer Niederst Robbins.",
     "legacyId": 135
   },
@@ -1085,7 +1085,7 @@ export const BOOKS: BookDoc[] = [
     "title": "HTML and CSS: Design and Build Websites",
     "author": "Jon Duckett",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Web Development title by Jon Duckett.",
     "legacyId": 136
   },
@@ -1093,7 +1093,7 @@ export const BOOKS: BookDoc[] = [
     "title": "JavaScript and JQuery: Interactive Front-End Web Development",
     "author": "Jon Duckett",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Web Development / Programming title by Jon Duckett.",
     "legacyId": 137
   },
@@ -1101,7 +1101,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Eloquent JavaScript: A Modern Introduction to Programming",
     "author": "Marijn Haverbeke",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Programming / JavaScript title by Marijn Haverbeke.",
     "legacyId": 138
   },
@@ -1109,7 +1109,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Python Crash Course",
     "author": "Eric Matthes",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Programming / Python title by Eric Matthes.",
     "legacyId": 139
   },
@@ -1117,7 +1117,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Automate the Boring Stuff with Python",
     "author": "Al Sweigart",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Programming / Automation title by Al Sweigart.",
     "legacyId": 140
   },
@@ -1125,7 +1125,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Programming Logic and Design",
     "author": "Joyce Farrell",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Programming Fundamentals title by Joyce Farrell.",
     "legacyId": 141
   },
@@ -1133,7 +1133,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Introduction to the Theory of Computation",
     "author": "Michael Sipser",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Theoretical Computer Science title by Michael Sipser.",
     "legacyId": 142
   },
@@ -1141,7 +1141,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Computer Security: Principles and Practice",
     "author": "William Stallings and Lawrie Brown",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Cybersecurity / Computer Security title by William Stallings and Lawrie Brown.",
     "legacyId": 143
   },
@@ -1149,7 +1149,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Cryptography and Network Security: Principles and Practice",
     "author": "William Stallings",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Cryptography / Cybersecurity title by William Stallings.",
     "legacyId": 144
   },
@@ -1157,7 +1157,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Web Application Hacker's Handbook",
     "author": "Dafydd Stuttard and Marcus Pinto",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Web Security / Cybersecurity title by Dafydd Stuttard and Marcus Pinto.",
     "legacyId": 145
   },
@@ -1165,7 +1165,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Data Communications and Networking",
     "author": "Behrouz A. Forouzan",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Data Communications / Networking title by Behrouz A. Forouzan.",
     "legacyId": 146
   },
@@ -1173,7 +1173,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Information Systems Today: Managing in the Digital World",
     "author": "Joseph Valacich and Christoph Schneider",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Information Systems / IT Management title by Joseph Valacich and Christoph Schneider.",
     "legacyId": 147
   },
@@ -1181,7 +1181,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Information Technology for Management: On-Demand Strategies for Performance, Growth and Sustainability",
     "author": "Efraim Turban, Linda Volonino, and Gregory R. Wood",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A IT Management / Business Technology title by Efraim Turban, Linda Volonino, and Gregory R. Wood.",
     "legacyId": 148
   },
@@ -1189,7 +1189,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Cloud Computing: Concepts, Technology & Architecture",
     "author": "Thomas Erl, Zaigham Mahmood, and Ricardo Puttini",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Cloud Computing title by Thomas Erl, Zaigham Mahmood, and Ricardo Puttini.",
     "legacyId": 149
   },
@@ -1197,7 +1197,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Designing Data-Intensive Applications",
     "author": "Martin Kleppmann",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Software Architecture / Data Engineering title by Martin Kleppmann.",
     "legacyId": 150
   },
@@ -1205,7 +1205,7 @@ export const BOOKS: BookDoc[] = [
     "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
     "author": "Gene Kim, Kevin Behr, and George Spafford",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Business Fiction / IT Management title by Gene Kim, Kevin Behr, and George Spafford.",
     "legacyId": 151
   },
@@ -1213,7 +1213,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Site Reliability Engineering: How Google Runs Production Systems",
     "author": "Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy, editors",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Site Reliability Engineering / IT Operations title by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy, editors.",
     "legacyId": 152
   },
@@ -1221,7 +1221,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Blockchain Basics: A Non-Technical Introduction in 25 Steps",
     "author": "Daniel Drescher",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Blockchain / Financial Technology title by Daniel Drescher.",
     "legacyId": 153
   },
@@ -1229,7 +1229,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Digital Design and Computer Architecture",
     "author": "David Money Harris and Sarah L. Harris",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Computer Engineering / Digital Logic title by David Money Harris and Sarah L. Harris.",
     "legacyId": 154
   },
@@ -1237,7 +1237,7 @@ export const BOOKS: BookDoc[] = [
     "title": "Computer Organization and Design: The Hardware/Software Interface",
     "author": "David A. Patterson and John L. Hennessy",
     "genre": "Educational",
-    "availableCopies": 3,
+    "availableCopies": 5,
     "description": "A Computer Architecture title by David A. Patterson and John L. Hennessy.",
     "legacyId": 155
   }

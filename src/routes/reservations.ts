@@ -11,6 +11,22 @@ import { ReservationStatus } from "../types/index";
 
 export const reservationRouter = Router();
 
+async function restoreAvailableCopies(bookId: mongoose.Types.ObjectId, quantity: number) {
+  const nextAvailableCopies = { $add: ["$availableCopies", quantity] };
+  await BookModel.collection.updateOne({ _id: bookId }, [
+    {
+      $set: {
+        availableCopies: {
+          $min: [
+            { $ifNull: ["$totalCopies", nextAvailableCopies] },
+            nextAvailableCopies,
+          ],
+        },
+      },
+    },
+  ]);
+}
+
 reservationRouter.use(requireAuth);
 
 interface IdParam {
@@ -120,9 +136,9 @@ reservationRouter.patch(
 
       if (cancelledReservation) {
         if (cancelledReservation.inventoryClaimed) {
-          await BookModel.updateOne(
-            { _id: cancelledReservation.bookId },
-            { $inc: { availableCopies: cancelledReservation.quantity || 1 } },
+          await restoreAvailableCopies(
+            cancelledReservation.bookId,
+            cancelledReservation.quantity || 1,
           );
         }
         res.json({ ...cancelledReservation.toJSON(), status: ReservationStatus.Cancelled });
@@ -175,10 +191,7 @@ reservationRouter.delete(
     }
 
     if (reservation.status !== ReservationStatus.Cancelled && reservation.inventoryClaimed) {
-      await BookModel.updateOne(
-        { _id: reservation.bookId },
-        { $inc: { availableCopies: reservation.quantity || 1 } },
-      );
+      await restoreAvailableCopies(reservation.bookId, reservation.quantity || 1);
     }
 
     res.status(204).send();

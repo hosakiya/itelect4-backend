@@ -29,6 +29,7 @@ export interface Book {
   author: string;
   genre: string;
   availableCopies: number;
+  totalCopies?: number;
   description: string;
 }
 
@@ -106,7 +107,7 @@ export type CourseDoc = Pick<
 
 export type BookDoc = Pick<
   Book,
-  "title" | "author" | "genre" | "availableCopies" | "description"
+  "title" | "author" | "genre" | "availableCopies" | "description" | "totalCopies"
 > & {
   legacyId?: number;
 };

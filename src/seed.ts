@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import { connectDatabase } from "./config/database";
 import { Course } from "./models/Course";
 import { BookModel } from "./models/Book";
+import { ReservationModel } from "./models/Reservation";
 import { COURSES } from "./data/courses";
 import { BOOKS } from "./data/books";
 
@@ -15,14 +16,28 @@ async function seed() {
   await Course.deleteOne({ code: "CSSWENG" });
   console.log(`${COURSES.length} courses in ${mongoose.connection.name}`);
 
+  const activeClaims = await ReservationModel.aggregate<{
+    _id: mongoose.Types.ObjectId;
+    quantity: number;
+  }>([
+    { $match: { inventoryClaimed: true, status: { $ne: "cancelled" } } },
+    { $group: { _id: "$bookId", quantity: { $sum: { $ifNull: ["$quantity", 1] } } } },
+  ]);
+  const claimedCopiesByBookId = new Map(
+    activeClaims.map((claim) => [String(claim._id), claim.quantity]),
+  );
+
   for (const book of BOOKS) {
-    const { availableCopies, ...catalogFields } = book;
+    const { availableCopies: totalCopies, ...catalogFields } = book;
+    const existingBook = await BookModel.findOne({ title: book.title }).select("_id");
+    const activeClaimedCopies = existingBook
+      ? claimedCopiesByBookId.get(String(existingBook._id)) ?? 0
+      : 0;
+    const availableCopies = Math.max(0, totalCopies - activeClaimedCopies);
     await BookModel.updateOne(
       { title: book.title },
       {
-        $set: catalogFields,
-        // Stock is live catalog data; set its initial value only for new books.
-        $setOnInsert: { availableCopies },
+        $set: { ...catalogFields, totalCopies, availableCopies },
       },
       { upsert: true },
     );
