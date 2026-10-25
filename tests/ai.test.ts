@@ -1,21 +1,16 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import request from "supertest";
-import { beforeAll, describe, expect, it } from "vitest";
+import { describe, expect, it } from "vitest";
 import { aiRouter } from "../src/routes/ai";
 import { aiRequestSchema } from "../src/schemas/review";
 
-const jwtSecret = "vitest-only-secret";
 const app = express();
 app.use(express.json());
 app.use("/api/ai", aiRouter);
 
-beforeAll(() => {
-  process.env.JWT_SECRET = jwtSecret;
-});
-
 function tokenFor(userId: string): string {
-  return jwt.sign({ userId }, jwtSecret);
+  return jwt.sign({ userId }, process.env.JWT_SECRET!);
 }
 
 describe("AI review request", () => {
