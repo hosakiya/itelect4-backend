@@ -14,5 +14,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run typecheck
       - run: npm test
+        env:
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
       - run: npm run build

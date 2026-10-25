@@ -1,5 +1,7 @@
 # ITELECT4 Backend API
 
+[![Backend CI](https://github.com/hosakiya/itelect4-backend/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/hosakiya/itelect4-backend/actions/workflows/ci.yml)
+
 Backend REST API for the DLSL Book Reservation & Academic Submission System. Built with Express, TypeScript, and MongoDB Atlas.
 
 ## Live Deployment
